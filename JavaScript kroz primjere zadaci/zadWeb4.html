@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zadatak 4</title>
+</head>
+<body>
+<p>Zadatak 4.<br>Napraviti JavaScript kod da radi sljedeće: čim se otvori stranica da od korisnika traži da unese svoje ime, pa da  poslije toga unese broj godina. Poslije toga u prozoru treba ispisati velikim slovima ime korisnika i koliko ima godina.</p>
+<br>
+<br>
+
+<h2 id="ispis"></h2>
+
+<script>
+	var upitIme = prompt ("Unesi ime", "Ime")
+	var upitGod = prompt("Unesi godine", "godine")
+
+	document.getElementById("ispis").innerHTML=
+	"Ime osobe: "+upitIme+"<br>"+ "Godine: "+upitGod;
+
+</script>
+
+</body>
+</html>

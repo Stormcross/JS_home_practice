@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>skripta i funkcija</title>
+
+	
+</head>
+
+<body>
+<h1>Testna web stranica</h1>
+
+<p id="test">Testni tekst koji zelimo promjeniti</p>
+<button type="button" onclick="mojaFunkcija()"> Klik za promjenu </button>
+<button type="button" onclick="mojaFunkcija_1()"> Klik za promjenu </button>
+
+
+	<script>
+	//Bolje da se stavlja na kraj body elementa jer se brze stranica pokrene
+		function mojaFunkcija()
+		{
+			document.getElementById("test").innerHTML="Promjena paragrafa.";
+		}
+	</script>
+
+	<script src="Script_funkcija.js">
+		//vanjsko dozivanje funkcije is external .js fajla
+	</script>
+
+</body>
+
+</html>

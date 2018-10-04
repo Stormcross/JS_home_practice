@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript kroz primjere</title>
+	<script>
+		//window.alert("Web link u consoli: F12");
+		console.log("https://ff.unze.ba/nabokov/programirZaIntern/JavaScript/JavaScript%20zadaci%20i%20rjesenja%20zima%202013.pdf");
+	</script>
+</head>
+<body>
+	<h3>Izvor za ucenje: 
+		<a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a>
+	<br>
+	</h3>
+	<h1>Zadaci:</h1>
+	<p>****************************************</p>
+	<p id="ispis"></p>
+	<p >***************************************</p>
+
+	<script src="JavaScript kroz primjere.js"></script>
+
+	<script>
+		
+		var	zadaci = [
+			zad_1 = {
+				tekst:"Zadatak 1.<br>Uz pomoć JavaScript-a ispisati rečenicu: Naš prvi program u JavaScriptu.",
+				rjesenje:z1()
+			},
+			zad_2 = {
+				tekst:"Zadatak 2.<br>Uz pomoć JavaScript-a definisati varijablu x, pridružiti joj neki broj pa onda ispisati rečenicu “x puta 5 je ___”, gdje će se na mjesto crtice nalaziti izračunata vrijednost.",
+				rjesenje:z2()
+			},
+			zad_3 = {
+				tekst:"Zadatak 3.<br>Uz pomoć JavaScript a ispisati sljedeću rečenicu: Napoleon je rekao: 'Svijet pati mnogo. Ne zbog nasilja loših ljudi. Nego zbog šutnje dobrih ljudi.'",
+				rjesenje:z3()
+			},
+			zad_4 = {
+				tekst:"Zadatak 4.<br>Napraviti JavaScript kod da radi sljedeće: čim se otvori stranica da od korisnika traži da unese svoje ime, pa da  poslije toga unese broj godina. Poslije toga u prozoru treba ispisati velikim slovima ime korisnika i koliko ima godina.",
+				rjesenje: "<a href='file:///D:/Dokumenti/Programski%20kod%20-%20GIT/Test/JavaScript%20kroz%20primjere%20zadaci/zadWeb4.html' target='_blank' >Klilni za rjesenje</a>"
+				//ovdje promjeniti put do lokalnog fajla za zadatak
+			}
+		];
+
+
+//prolazenje kroz loop i ispisivanje van zadataka :)
+		var test="";
+		// for(let i = 0, length1 = zadaci.length; i < length1; i++){
+		// 	test += 
+		// 		zadaci[i].tekst+
+		// 		"<br> Rjesenje: <br>"+
+		// 	zadaci[i].rjesenje+`<br>
+		// 	__________________________________________________
+		// 	<br>
+		// 	<br>`;
+			
+		// }	
+		zadaci.forEach(function(element) {
+			test += 
+				element.tekst+
+				"<br> Rjesenje: <br>"+
+				element.rjesenje+`<br>
+			__________________________________________________
+			<br>
+			<br>`;
+		});
+		document.getElementById("ispis").innerHTML=test;
+		
+
+		
+
+	
+
+		
+			
+		
+
+	</script>
+
+
+</body>
+</html>

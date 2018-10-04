@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript kroz primjere</title>
+	<script>
+		//window.alert("Web link u consoli: F12");
+		console.log("https://ff.unze.ba/nabokov/programirZaIntern/JavaScript/JavaScript%20zadaci%20i%20rjesenja%20zima%202013.pdf");
+	</script>
+</head>
+<body>
+	
+	<h1>Zadaci:</h1>
+	<p>****************************************</p>
+	<p id="ispis"></p>
+	<p >***************************************</p>
+
+	<script src="JavaScript kroz primjere.js"></script>
+
+	<script>
+		
+		var 
+		zadaci=[
+		
+		zad_1={
+			tekst:"Zadatak 1.<br>Uz pomoć JavaScript-a ispisati rečenicu: Naš prvi program u JavaScriptu.",
+			rjesenje:z1()
+		},
+		zad_2={
+			tekst:"Zadatak 2.<br>Uz pomoć JavaScript-a definisati varijablu x, pridružiti joj neki broj pa onda ispisati rečenicu “x puta 5 je ___”, gdje će se na mjesto crtice nalaziti izračunata vrijednost.",
+			rjesenje:z2()
+		},
+		zad_3={
+			tekst:"Uz pomoć JavaScript a ispisati sljedeću rečenicu: Napoleon je rekao: 'Svijet pati mnogo. Ne zbog nasilja loših ljudi. Nego zbog šutnje dobrih ljudi.'",
+			rjesenje:z3()
+		}
+		]
+
+
+//prolazenje kroz loop i ispisivanje van zadataka :)
+		var test="";
+		for(let i = 0, length1 = zadaci.length; i < length1; i++){
+				test+=
+				zadaci[i].tekst+"<br>"+"Rjesenje:"+"<br>"+
+				zadaci[i].rjesenje+"<br>"+
+				"__________________________________________________"+
+				"<br>"+"<br>";
+				
+			}	
+			document.getElementById("ispis").innerHTML=test;
+		
+
+		
+
+	
+
+		
+			
+		
+
+	</script>
+
+
+</body>
+</html>

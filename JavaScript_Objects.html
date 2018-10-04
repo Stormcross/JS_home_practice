@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS objekt</title>
+</head>
+<body>
+<h1>JS objekt</h1>
+
+<p id="objekt_1"></p>
+<p id="tipDatoteke"></p>
+<script>
+	var osoba={
+		ime:"Marko",
+		prezime:"Micek",
+		godina:29,
+		bojaKose:"plava"
+	};
+
+	document.getElementById("objekt_1").innerHTML=
+	osoba.ime+" "+osoba.prezime+" je osoba stara "+osoba.godina+
+	" godina i boju kose:"+	osoba.bojaKose;
+
+	document.getElementById("tipDatoteke").innerHTML=
+	"Tip varijable: "+ typeof osoba;
+
+</script>
+
+</body>
+</html>

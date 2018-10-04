@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display_options</title>
+</head>
+<body>
+	<h1>Moja prva web stranica</h1>
+	<p>Prvi paragraf</p>
+
+	<p id="test"></p>
+
+	<script>
+		document.getElementById("test").innerHTML=5+6;
+		document.write(5+6);
+		console.log("Ovo je zapisano u consoli!")
+		
+	</script>
+
+	<button id="button"	onclick="document.write(7+8)">Klikni</button>
+	<!--prebrika cijelu stranicu, koristenje samo za testiranje, nije pametno u produkciji-->
+
+	<button id="button1"	onclick="window.alert(7+8)">popup</button>
+
+
+</body>
+</html>
